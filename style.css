@@ -1,0 +1,9 @@
+.jumbotron {
+    text-align: center;
+    border: 2px solid black;
+    margin: 35px;
+}
+
+form {
+    margin: 35px;
+}
