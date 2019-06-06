@@ -24,3 +24,13 @@ app.get("/view", function(req, res) {
 app.get("/reservation", function(req, res) {
     res.sendFile(path.join(__dirname, "reservation.html"));
 });
+
+app.post("/reservation", function(req, res) {
+    var newreservation = req.body;
+
+    console.log(newreservation);
+
+    reservations.push(newreservation);
+
+    res.json(newreservation);
+});
