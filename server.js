@@ -25,7 +25,7 @@ app.get("/reservation", function(req, res) {
     res.sendFile(path.join(__dirname, "reservation.html"));
 });
 
-app.post("/reservation", function(req, res) {
+app.post("/view", function(req, res) {
     var newreservation = req.body;
 
     console.log(newreservation);

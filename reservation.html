@@ -54,7 +54,7 @@
                 id: $("#unique-id").val().trim()
             };
 
-            $.post("/reservation", newReservation)
+            $.post("/view", newReservation)
                 .then(function(data) {
                     console.log(data);
                     alert("Adding reservation");
