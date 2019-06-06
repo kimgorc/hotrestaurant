@@ -34,3 +34,7 @@ app.post("/view", function(req, res) {
 
     res.json(newreservation);
 });
+
+app.get("/data", function(req,res) {
+    res.send(reservations);
+});
